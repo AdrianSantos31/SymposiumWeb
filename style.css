@@ -1,8 +1,6 @@
 #coverPhoto{
 
 
-
-
 }
 
 #projects{
@@ -13,4 +11,8 @@
 #contact{
   background-color: #0a64be;
   color: white;
+}
+
+#testMe{
+  color: black;
 }
