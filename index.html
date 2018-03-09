@@ -65,9 +65,9 @@
                         <a href="projects/index.html">Projects </a>
                     </li>
                     <li class="page-scroll">
-                      <!-- onclick="document.getElementById('id01').style.display='block'" -->
+                      <!-- onclick="document.getElementById('modalLogInPopUp').style.display='block'" -->
                         <!-- href="studentLogIn/index.html" -->
-                        <a onclick="document.getElementById('id01').style.display='block'">Student Log In</a>
+                        <a onclick="document.getElementById('modalLogInPopUp').style.display='block'">Student Log In</a>
                     </li>
                 </ul>
             </div>
@@ -79,8 +79,20 @@
     <!-- Cover Section -->
     <header>
             <div class="row">
+              <div class="darkCoverPhoto">
                   <img class="img-responsive" id="coverPhoto" src="images/cover.jpg" alt="" width="100%">
+                  <div class="content">
 
+                      <div class="textContent">
+                        <!--Replace SQL syntax-->
+                        <h5>FRI, APR 20 at 3:00PM, JACKSONVILLE, FL</h5>
+                        <h1>UNF School of Computing Symposium </h1>
+                        <h1>Symposium - Spring 2018 </h1>
+                        <h5>By: School of Computing, University of North Florida</h5>
+                      </div>
+
+                  </div>
+                </div>
             </div>
     </header>
 
@@ -204,16 +216,16 @@
   </section>
 
   <!--Modal Log In-->
-  <div id="id01" class="modal">
+  <div id="modalLogInPopUp" class="modal">
     <form class="modal-content animate" action="/action_page.php">
       <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <span onclick="document.getElementById('modalLogInPopUp').style.display='none'" class="close" title="Close Modal">&times;</span>
         <!-- <img src="studentLogIn/studentPicture/000001-adrian.jpg" alt="Avatar" class="avatar" height="50%" width="50%"> -->
       </div>
 
       <div class="container-fluid">
         <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="textt" placeholder="Enter Username" name="uname" required>
 
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
@@ -225,7 +237,7 @@
 
       <div class="container-fluid" style="background-color:#f1f1f1">
         <br>
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-small btn-danger">Cancel</button>
+        <button type="button" onclick="document.getElementById('modalLogInPopUp').style.display='none'" class="btn btn-small btn-danger">Cancel</button>
         <span class="psw">Forgot <a href="#">password?</a></span>
         <br><br>
       </div>
@@ -257,8 +269,6 @@
           </div>
       </div>
   </section> -->
-
-
 
     <!-- Footer -->
     <footer class="text-center">
@@ -314,7 +324,7 @@
     <!-- Modal Script -->
     <script>
     // Get the modal
-      var modal = document.getElementById('id01');
+      var modal = document.getElementById('modalLogInPopUp');
 
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
