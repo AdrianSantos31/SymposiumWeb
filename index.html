@@ -38,7 +38,6 @@
 </head>
 
 <body id="page-top" class="index">
-
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
@@ -66,6 +65,8 @@
                         <a href="projects/index.html">Projects </a>
                     </li>
                     <li class="page-scroll">
+                      <!-- onclick="document.getElementById('id01').style.display='block'" -->
+                        <!-- href="studentLogIn/index.html" -->
                         <a href="studentLogIn/index.html">Student Log In</a>
                     </li>
                 </ul>
@@ -79,6 +80,7 @@
     <header>
             <div class="row">
                   <img class="img-responsive" id="coverPhoto" src="images/cover.jpg" alt="" width="100%">
+                  <button id="modalButton" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
             </div>
     </header>
 
@@ -201,6 +203,35 @@
       </div>
   </section>
 
+  <!--Modal Log In-->
+  <div id="id01" class="modal">
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <!-- <img src="studentLogIn/studentPicture/000001-adrian.jpg" alt="Avatar" class="avatar" height="50%" width="50%"> -->
+      </div>
+
+      <div class="container-fluid">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="btn btn-block btn-success">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container-fluid" style="background-color:#f1f1f1">
+        <br>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-small btn-danger">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        <br><br>
+      </div>
+    </form>
+  </div>
+
 
   <!--Log In Section-->
   <!-- <section class="success" id="studentLogIn">
@@ -280,7 +311,18 @@
         </a>
     </div>
 
+    <!-- Modal Script -->
+    <script>
+    // Get the modal
+      var modal = document.getElementById('id01');
 
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+    </script>
     <!-- jQuery -->
     <script src="old/vendor/jquery/jquery.min.js"></script>
 
@@ -296,7 +338,6 @@
 
     <!-- Theme JavaScript -->
     <script src="old/js/freelancer.min.js"></script>
-
 </body>
 
 </html>
