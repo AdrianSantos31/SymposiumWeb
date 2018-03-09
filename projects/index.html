@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,6 +32,30 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!--Ajax Loading-->
+    <!--AJAX-->
+    <script>
+    $(document).ready(function(){
+        $("#alphabeticalButton").click(function(){
+            $("#ajaxLoad").load("projectTypes/projectAlphabetical/projectAlphabetical.html");
+        });
+    });
+    </script>
+
+    <script>
+    $(document).ready(function(){
+        $("#favoritesButton").click(function(){
+            $("#ajaxLoad").load("projectTypes/projectFavorites/projectFavorites.html");
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+        $("#sectionsButton").click(function(){
+            $("#ajaxLoad").load("projectTypes/projectSections/projectSections.html");
+        });
+    });
+    </script>
 
 </head>
 
@@ -77,69 +99,75 @@
             <div class="row">
               <center>
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-success btn-lg">Projects</button>
-                  <button type="button" class="btn btn-danger btn-lg">Favorites</button>
-                  <button type="button" class="btn btn-warning btn-lg">Sections</button>
+                  <button type="button" id="alphabeticalButton" class="btn btn-success btn-lg">Projects</button>
+                  <button type="button" id="favoritesButton" class="btn btn-danger btn-lg">Favorites</button>
+                  <button type="button" id="sectionsButton" class="btn btn-warning btn-lg">Sections</button>
                 </div>
               </center>
             </div>
             <br>
-            <div class="row">
-              <center>
-                <h1>Alphabetical Order</h1>
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th scope="col">Table Number</th>
-                      <th scope="col">Project Name</th>
-                      <th scope="col">Favorite</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td><a href="projectHTML/test1.html">Symposium Makeover</a></td>
-                      <td>
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <input type="checkbox" aria-label="Checkbox for following text input">
+            <!--Alphabetical-->
+            <div id="ajaxLoad">
+              <!--Alphabetical-->
+              <div class="row">
+                <center>
+                  <h1>Alphabetical Order</h1>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Table Number</th>
+                        <th scope="col">Project Name</th>
+                        <th scope="col">Favorite</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><a href="projectHTML/test1.html">Symposium Makeover</a></td>
+                        <td>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Robot Me</td>
-                      <td>
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <input type="checkbox" aria-label="Checkbox for following text input">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Robot Me</td>
+                        <td>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Coolest Project</td>
-                      <td>
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <input type="checkbox" aria-label="Checkbox for following text input">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Coolest Project</td>
+                        <td>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </center>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </center>
+              </div>
             </div>
-            <div class="row">
+
+            <!--Favorites-->
+            <!-- <div class="row">
               <center>
                 <h1>Favorites</h1>
                 <table class="table table-hover">
@@ -193,9 +221,10 @@
                   </tbody>
                 </table>
               </center>
-            </div>
-            <div class="row">
+            </div> -->
 
+            <!--Sections-->
+            <!-- <div class="row">
               <center>
                 <h1>Sections</h1>
               </center>
@@ -303,9 +332,9 @@
                   </tbody>
                 </table>
 
-            </div>
-            <br>
+            </div> -->
 
+            <br>
         </div>
     </section>
 
@@ -377,8 +406,9 @@
     <!-- Theme JavaScript -->
     <script src="../old/js/freelancer.min.js"></script>
 
-    <!--AJAX-->
+    <!--Updated AJAX-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 
 </body>
