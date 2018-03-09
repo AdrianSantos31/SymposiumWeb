@@ -7,12 +7,12 @@
   //Session Username
   $_SESSION['username'] = $username;
   if($username == 'test' && $password == '123'){
-    header("Location: index.html");
+    header("Location:index.html");
   }else{
     if($username == "" && $password ==""){
-      header("Location: ../index.html?error=2");
+      header("Location: =../index.html?error=2");
     }else{
-    header("Location: ../index.html?error=1");
+    header("Location:../index.html?error=1");
   }
   }
  ?>
