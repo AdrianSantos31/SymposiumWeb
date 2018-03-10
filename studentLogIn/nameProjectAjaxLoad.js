@@ -8,10 +8,4 @@ $(document).ready(function(){
             $("#ajaxLoad").load("myProjects.html");
         });
     });
-
-    $(document).ready(function(){
-        $("#sectionsButton").click(function(){
-            $("#ajaxLoad").load("projectSections.html");
-        });
-    });
 });
