@@ -34,29 +34,30 @@
     <![endif]-->
     <!--Ajax Loading-->
     <!--AJAX-->
-    <script>
+
+    <!--Updated AJAX-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script>
     $(document).ready(function(){
         $("#alphabeticalButton").click(function(){
-            $("#ajaxLoad").load("projectTypes/projectAlphabetical/projectAlphabetical.html");
+            $("#ajaxLoad").load("projectAlphabetical.html");
         });
     });
     </script>
-
     <script>
     $(document).ready(function(){
         $("#favoritesButton").click(function(){
-            $("#ajaxLoad").load("projectTypes/projectFavorites/projectFavorites.html");
+            $("#ajaxLoad").load("projectFavorites.html");
         });
     });
     </script>
     <script>
     $(document).ready(function(){
         $("#sectionsButton").click(function(){
-            $("#ajaxLoad").load("projectTypes/projectSections/projectSections.html");
+            $("#ajaxLoad").load("projectSections.html");
         });
     });
-    </script>
-
+    </script> -->
 </head>
 
 <body id="page-top" class="index">
@@ -406,11 +407,8 @@
     <!-- Theme JavaScript -->
     <script src="../old/js/freelancer.min.js"></script>
 
-    <!--Updated AJAX-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-
+    <!--Custom JS-->
+    <script src="projectAjaxLoad.js"></script>
 </body>
 
 </html>
