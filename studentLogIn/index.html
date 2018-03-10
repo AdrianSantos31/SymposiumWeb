@@ -80,103 +80,120 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <center>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" id="myInfoButton" class="btn btn-success btn-lg">My Info</button>
+          <button type="button" id="myProjectsButton" class="btn btn-danger btn-lg">My Projects</button>
+        </div>
+      </center>
+    </div>
     <!--Information Section -->
     <section class="success">
         <div class="container">
-            <div class="row">
-                <!--Left Side-->
-                <div class="col-lg-6">
-                  <div class="row">
-                    <div class="col-md-8">
-                    </div>
-                    <div class="col-md-4">
-                      <button type="button" class="btn btn-primary">Upload Picture</button>
-                    </div>
-                  </div>
-                  <br>
-                  <!--firstName-->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="usr" placeholder="First Name">
-                      </div>
-                    </div>
-                  </div>
-                  <!--lastName-->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="usr" placeholder="Last Name">
-                      </div>
-                    </div>
-                  </div>
-                  <!--nNumber-->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="usr" placeholder="N-Number">
-                      </div>
-                    </div>
-                  </div>
-                  <!--email-->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="usr" placeholder="Email">
-                      </div>
-                    </div>
-                  </div>
-                  <!--email-->
-                </div>
-                <!--Right Side-->
-                <div class="col-lg-6">
-                  <!--Upload Resume-->
+          <!--ajaxLoad-->
+            <div id="ajaxLoad">
+              <!--myInfo Section -->
+              <div class="row">
+                  <!--Left Side-->
+                  <div class="col-lg-6">
                     <div class="row">
                       <div class="col-md-8">
                       </div>
                       <div class="col-md-4">
-                        <button type="button" class="btn btn-primary">Upload Picture</button>
+                        <button type="button" id="uploadPicture" class="btn btn-primary">Upload Picture</button>
                       </div>
                     </div>
-                  <!-- <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <!-- <label for="exampleInputFile">File input</label> -->
-                        <!-- <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-                        <small id="fileHelp" class="form-text text-muted">Use this to upload your resume</small>
+                    <br>
+                    <!--firstName-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="usr" placeholder="First Name">
+                        </div>
                       </div>
                     </div>
-                  </div> -->
-                  <br>
-                  <!--Major-->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="usr" placeholder="Major">
+                    <!--lastName-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="usr" placeholder="Last Name">
+                        </div>
+                      </div>
+                    </div>
+                    <!--nNumber-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="usr" placeholder="N-Number">
+                        </div>
+                      </div>
+                    </div>
+                    <!--email-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="usr" placeholder="Email">
+                        </div>
+                      </div>
+                    </div>
+                    <!--email-->
+                  </div>
+                  <!--Right Side-->
+                  <div class="col-lg-6">
+                    <!--Upload Resume-->
+                      <div class="row">
+                        <div class="col-md-8">
+                        </div>
+                        <div class="col-md-4">
+                          <button type="button" id="uploadResume" class="btn btn-primary">Upload Resume</button>
+                        </div>
+                      </div>
+                    <!-- <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <!-- <label for="exampleInputFile">File input</label> -->
+                          <!-- <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                          <small id="fileHelp" class="form-text text-muted">Use this to upload your resume</small>
+                        </div>
+                      </div>
+                    </div> -->
+                    <br>
+                    <!--Major-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="usr" placeholder="Major">
+                        </div>
+                      </div>
+                    </div>
+                    <!--LinkedIn-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="usr" placeholder="LinkedIn">
+                        </div>
+                      </div>
+                    </div>
+                    <!--shortDescription-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="usr" placeholder="Short Description (140 characters)">
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <!--LinkedIn-->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="usr" placeholder="LinkedIn">
-                      </div>
-                    </div>
-                  </div>
-                  <!--shortDescription-->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="usr" placeholder="Short Description (140 characters)">
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              </div>
+
             </div>
-            <hr>
-            <!--Projects-->
-            <div class="row">
+
+            <!--myProjects Section-->
+            <!-- <div class="row">
               <div class="col-lg-12">
                 <div class="row">
                     <!--Project 1-->
@@ -209,7 +226,8 @@
                 </div>
 
               </div>
-            </div>
+            </div> -->
+
             <!--Button-->
             <div class="row">
               <div class="col-md-4">
