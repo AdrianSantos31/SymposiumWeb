@@ -65,7 +65,6 @@
                         <a href="projects/index.html">Projects </a>
                     </li>
                     <li class="page-scroll">
-                      <!-- onclick="document.getElementById('modalLogInPopUp').style.display='block'" -->
                         <!-- href="studentLogIn/index.html" -->
                         <a onclick="document.getElementById('modalLogInPopUp').style.display='block'">Student Log In</a>
                     </li>
@@ -77,12 +76,13 @@
     </nav>
 
     <!-- Cover Section -->
+    <div class="container-fluid">
     <header>
+
             <div class="row">
               <div class="darkCoverPhoto">
-                  <img class="img-responsive" id="coverPhoto" src="images/cover.jpg" alt="" width="100%">
+                  <img class="img-responsive" id="coverPhoto" src="images/cover.jpg" alt="" width="100%"/>
                   <div class="content">
-
                       <div class="textContent">
                         <!--Replace SQL syntax-->
                         <h5>FRI, APR 20 at 3:00PM, JACKSONVILLE, FL</h5>
@@ -90,11 +90,12 @@
                         <h1>Symposium - Spring 2018 </h1>
                         <h5>By: School of Computing, University of North Florida</h5>
                       </div>
-
                   </div>
                 </div>
             </div>
+
     </header>
+    </div>
 
   <!--Projects Section -->
   <!-- <section class="success" id="projects">
@@ -216,8 +217,8 @@
   </section>
 
   <!--Modal Log In-->
-  <div id="modalLogInPopUp" class="modal">
-    <form class="modal-content animate" method="post" action="studentLogIn/authLogIn.php">
+  <div id="modalLogInPopUp" class="modalLogIn">
+    <form class="modalLogIn-content animate" method="post" action="studentLogIn/authLogIn.php">
       <div class="imgcontainer">
         <span onclick="document.getElementById('modalLogInPopUp').style.display='none'" class="close" title="Close Modal">&times;</span>
         <!-- <img src="studentLogIn/studentPicture/000001-adrian.jpg" alt="Avatar" class="avatar" height="50%" width="50%"> -->
