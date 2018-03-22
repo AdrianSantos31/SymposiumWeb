@@ -334,7 +334,28 @@
                           <div class="modal-body">
                               <h2>Student Log In</h2>
                               <hr class="star-primary">
-                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                              <b4>
+                                <form method="post" action="studentLogIn/authLogIn.php">
+                                  <div class="container-fluid">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="textt" placeholder="Enter Username" name="username" required>
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="password" required>
+                                    <button type="submit" class="btn btn-block btn-success">Login</button>
+                                    <label>
+                                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                  </div>
+
+                                  <div class="container-fluid" style="background-color:#f1f1f1">
+                                    <br>
+                                    <span class="password">Forgot <a href="#">password?</a></span>
+                                    <br><br>
+                                  </div>
+                                </form>
+                                <br>
+                              <button type="button" class="btn btn-small btn-danger" data-dismiss="modal"><i class="fa fa-times "></i> Close</button>
                           </div>
                       </div>
                   </div>
