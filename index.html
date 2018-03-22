@@ -66,7 +66,8 @@
                     </li>
                     <li class="page-scroll">
                         <!-- href="studentLogIn/index.html" -->
-                        <a onclick="document.getElementById('modalLogInPopUp').style.display='block'">Student Log In</a>
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">Student Log In</a>
+                        <!-- <a onclick="document.getElementById('modalLogInPopUp').style.display='block'">Student Log In</a> -->
                     </li>
                 </ul>
             </div>
@@ -76,9 +77,7 @@
     </nav>
 
     <!-- Cover Section -->
-    <div class="container-fluid">
     <header>
-
             <div class="row">
               <div class="darkCoverPhoto">
                   <img class="img-responsive" id="coverPhoto" src="images/cover.jpg" alt="" width="100%"/>
@@ -93,9 +92,7 @@
                   </div>
                 </div>
             </div>
-
     </header>
-    </div>
 
   <!--Projects Section -->
   <!-- <section class="success" id="projects">
@@ -321,6 +318,79 @@
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
+
+    <section>
+      <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>Salim Zubair</h2>
+                              <hr class="star-primary">
+                              <img src="../../studentLogIn/studentPicture/000003-salim.jpg" class="img-responsive img-centered" alt="" width="405px" height="405px">
+                              <h5>University of North Florida</h5>
+                              <h5>Computer and Information Sciences</h5>
+                              <h5>Computer Science</h5>
+                              <br>
+                              <h4>"I like databases"</h4>
+                              <br>
+                              <ul class="list-inline item-details">
+                                  <li>Project
+                                      <strong><a href="http://startbootstrap.com">1</a>
+                                      </strong>
+                                  </li>
+                                  <li>Details
+                                      <strong><a href="http://startbootstrap.com">Here</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <ul class="list-inline item-details">
+                                  <li>Project
+                                      <strong><a href="http://startbootstrap.com">2</a>
+                                      </strong>
+                                  </li>
+                                  <li>Details
+                                      <strong><a href="http://startbootstrap.com">Here</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <ul class="list-inline item-details">
+                                  <li>Project
+                                      <strong><a href="http://startbootstrap.com">3</a>
+                                      </strong>
+                                  </li>
+                                  <li>Details
+                                      <strong><a href="http://startbootstrap.com">Here</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+
+                              <div class="row">
+                                <center>
+                                  <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-success btn-lg">LinkedIn</button>
+                                    <button type="button" class="btn btn-danger btn-lg">Resume</button>
+                                    <button type="button" class="btn btn-warning btn-lg">Email</button>
+                                  </div>
+                                </center>
+                              </div>
+                              <br>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
 
     <!-- Modal Script -->
     <script>
