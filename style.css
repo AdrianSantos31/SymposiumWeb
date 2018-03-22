@@ -157,6 +157,6 @@ span.psw {
   /*width: 8em*/
 }
 
-.boxContent{
-
+.content{
+  overflow-x: scroll;
 }
