@@ -6,6 +6,8 @@
   app.use(express.static("public"));
   app.set('view engine', 'ejs');
 
+  var hitNumber = 0;
+
 // <<<<<<< HEAD
   //sql connection
   // var connection = mysql.createConnection({
@@ -54,7 +56,8 @@ function sayHello(res){
 
 
   app.get("/", function(req, res){
-    console.log("HomePage hit");
+    console.log("HomePage hit: " + hitNumber);
+    hitNumber++;
     //res.sendFile(path.join(__dirname+"/playerDBFun.html"));
     //q1(res, connection);
     //q2(res, connection, 'n00900245');
