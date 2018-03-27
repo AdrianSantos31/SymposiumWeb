@@ -6,7 +6,10 @@
   app.use(express.static("public"));
   app.set('view engine', 'ejs');
 
-  var hitNumber = 0;
+  var homepageHitNumber = 0;
+  var indexHitNumber = 0;
+  var projectsHitNumber = 0;
+  var infoHitNumber = 0;
 
 // <<<<<<< HEAD
   //sql connection
@@ -56,8 +59,8 @@ function sayHello(res){
 
 
   app.get("/", function(req, res){
-    console.log("HomePage hit: " + hitNumber);
-    hitNumber++;
+    console.log("HomePage hit: " + homepageHitNumber);
+    homepageHitNumber++;
     //res.sendFile(path.join(__dirname+"/playerDBFun.html"));
     //q1(res, connection);
     //q2(res, connection, 'n00900245');
@@ -66,20 +69,23 @@ function sayHello(res){
   })
   //change to /studentLogIn/index
   app.get("/index", function(req, res){
-    console.log("Index hit");
+    console.log("Index hit: " + indexHitNumber);
+    indexHitNumber++;
 
     //q2(res, connection, 'n00900245');
   })
 
   app.get("/projects", function(req, res){
-    console.log("projects hit");
+    console.log("Projects hit: " + projectsHitNumber);
     res.render('myProjects.ejs');
+    projectsHitNumber++;
 
   })
 
   app.get("/myInfo", function(req, res){
-    console.log("Info hit");
+    console.log("Info hit: " + infoHitNumber);
     res.redirect('/index');
+    infoHitNumber++;
 
   })
 
