@@ -91,7 +91,7 @@ function sayHello(res){
 
 
   app.listen(3000, function(){
-    console.log('Serving Dog Demo on port 3000');
+    console.log('Connected to Port 3000');
   });
 
   //connection.end();
