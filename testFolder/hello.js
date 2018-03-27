@@ -7,34 +7,35 @@
   app.set('view engine', 'ejs');
 
   //sql connection
-  var connection = mysql.createConnection({
-    host  : 'localhost',
-    user  : 'root',
-    password  : 'Morcam@4',
-    database: 'sympo',
-    dateStrings : 'true'
-  });
+  // var connection = mysql.createConnection({
+  //   host  : 'localhost',
+  //   user  : 'root',
+  //   password  : 'Morcam@4',
+  //   database: 'sympo',
+  //   dateStrings : 'true'
+  // });
+
 //make connection
-  connection.connect(function(err) {
-    if(err) {
-      console.error('error conecting: ' + err.stack);
-      return;
-    }
-    console.log('connected as id:' + connection.threadId);
-  });
+  // connection.connect(function(err) {
+  //   if(err) {
+  //     console.error('error conecting: ' + err.stack);
+  //     return;
+  //   }
+  //   console.log('connected as id:' + connection.threadId);
+  // });
 
 
 //samle querry
 
-function q2(res, connection, ID){
-  var myQ = "select * from presenters where nID = 'n00900245';";
-  console.log('Gathering info from presenters');
-  connection.query(myQ, function(error, results, fields){
-    if(error) throw error;
-    var firstName = results.firstN;
-    res.render('myInfo.ejs', {FIRSTNAME: 'Camron'});
-  })
-}
+// function q2(res, connection, ID){
+//   var myQ = "select * from presenters where nID = 'n00900245';";
+//   console.log('Gathering info from presenters');
+//   connection.query(myQ, function(error, results, fields){
+//     if(error) throw error;
+//     var firstName = results.firstN;
+//     res.render('myInfo.ejs', {FIRSTNAME: 'Camron'});
+//   })
+// }
 
 function sayHello(res){
   res.send("Hello There");
