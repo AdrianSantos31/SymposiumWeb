@@ -11,7 +11,7 @@
   var projectsHitNumber = 0;
   var infoHitNumber = 0;
 
-// <<<<<<< HEAD
+
   //sql connection
   // var connection = mysql.createConnection({
   //   host  : 'localhost',
@@ -21,8 +21,8 @@
   //   dateStrings : 'true'
   // });
 
-// =======
-//   //Initiates the SQL Connection
+
+//Initiates the SQL Connection
 //   var connection = mysql.createConnection({
 //     host  : 'localhost',
 //     user  : 'root',
@@ -30,7 +30,7 @@
 //     database: 'sympo',
 //     dateStrings : 'true'
 //   });
-// >>>>>>> d28ab288ec26c997bb561d4a81de87baf5c508e9
+
 //make connection
   // connection.connect(function(err) {
   //   if(err) {
@@ -58,9 +58,11 @@ function sayHello(res){
 }
 
 
-  app.get("/", function(req, res){
+  app.get("../", function(req, res){
     console.log("HomePage hit: " + homepageHitNumber);
     homepageHitNumber++;
+    res.sendFile("index.html");
+    // res.render("")
     //res.sendFile(path.join(__dirname+"/playerDBFun.html"));
     //q1(res, connection);
     //q2(res, connection, 'n00900245');
