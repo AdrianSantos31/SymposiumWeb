@@ -6,7 +6,7 @@
   app.use(express.static("public"));
   app.set('view engine', 'ejs');
 
-  //sql connection
+  //Initiates the SQL Connection
   var connection = mysql.createConnection({
     host  : 'localhost',
     user  : 'root',
@@ -40,6 +40,7 @@ function sayHello(res){
   res.send("Hello There");
 }
 
+
   app.get("/", function(req, res){
     console.log("HomePage hit");
     //res.sendFile(path.join(__dirname+"/playerDBFun.html"));
@@ -48,7 +49,7 @@ function sayHello(res){
     //res.render('index.ejs',{FIRSTNAME: 'Camron'});
 
   })
-
+  //change to /studentLogIn/index
   app.get("/index", function(req, res){
     console.log("Index hit");
 
