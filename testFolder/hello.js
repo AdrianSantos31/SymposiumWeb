@@ -3,21 +3,10 @@
   var app = express();
   var path = require("path");
 
-  app.use(express.static("public"));
+  //app.use(express.static("public"));
   app.set('view engine', 'ejs');
 
-// <<<<<<< HEAD
-  //sql connection
-  // var connection = mysql.createConnection({
-  //   host  : 'localhost',
-  //   user  : 'root',
-  //   password  : 'Morcam@4',
-  //   database: 'sympo',
-  //   dateStrings : 'true'
-  // });
-
-// =======
-//   //Initiates the SQL Connection
+  //Initiates the SQL Connection
 //   var connection = mysql.createConnection({
 //     host  : 'localhost',
 //     user  : 'root',
@@ -25,28 +14,27 @@
 //     database: 'sympo',
 //     dateStrings : 'true'
 //   });
-// >>>>>>> d28ab288ec26c997bb561d4a81de87baf5c508e9
-//make connection
-  // connection.connect(function(err) {
-  //   if(err) {
-  //     console.error('error conecting: ' + err.stack);
-  //     return;
-  //   }
-  //   console.log('connected as id:' + connection.threadId);
-  // });
-
+// //make connection
+//   connection.connect(function(err) {
+//     if(err) {
+//       console.error('error conecting: ' + err.stack);
+//       return;
+//     }
+//     console.log('connected as id:' + connection.threadId);
+//   });
+//
 
 //samle querry
 
-// function q2(res, connection, ID){
-//   var myQ = "select * from presenters where nID = 'n00900245';";
-//   console.log('Gathering info from presenters');
-//   connection.query(myQ, function(error, results, fields){
-//     if(error) throw error;
-//     var firstName = results.firstN;
-//     res.render('myInfo.ejs', {FIRSTNAME: 'Camron'});
-//   })
-// }
+function q2(res, connection, ID){
+  var myQ = "select * from presenters where nID = 'n00900245';";
+  console.log('Gathering info from presenters');
+  connection.query(myQ, function(error, results, fields){
+    if(error) throw error;
+    var firstName = results.firstN;
+    res.render('myInfo.ejs', {FIRSTNAME: 'Camron'});
+  })
+}
 
 function sayHello(res){
   res.send("Hello There");
@@ -71,7 +59,6 @@ function sayHello(res){
   app.get("/projects", function(req, res){
     console.log("projects hit");
     res.render('myProjects.ejs');
-
   })
 
   app.get("/myInfo", function(req, res){
