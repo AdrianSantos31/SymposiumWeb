@@ -6,9 +6,9 @@
   //app.use(express.static("public"));
   app.set('view engine', 'ejs');
 
-<<<<<<< HEAD
+
   //Initiates the SQL Connection
-=======
+
   var homepageHitNumber = 0;
   var indexHitNumber = 0;
   var projectsHitNumber = 0;
@@ -25,27 +25,6 @@
   // });
 
 
-//Initiates the SQL Connection
->>>>>>> 06a93702ead8438a7c52d831f22a70fc82a8641d
-//   var connection = mysql.createConnection({
-//     host  : 'localhost',
-//     user  : 'root',
-//     password  : 'Morcam@4',
-//     database: 'sympo',
-//     dateStrings : 'true'
-//   });
-<<<<<<< HEAD
-// //make connection
-//   connection.connect(function(err) {
-//     if(err) {
-//       console.error('error conecting: ' + err.stack);
-//       return;
-//     }
-//     console.log('connected as id:' + connection.threadId);
-//   });
-//
-=======
-
 //make connection
   // connection.connect(function(err) {
   //   if(err) {
@@ -54,8 +33,6 @@
   //   }
   //   console.log('connected as id:' + connection.threadId);
   // });
-
->>>>>>> 06a93702ead8438a7c52d831f22a70fc82a8641d
 
 //samle querry
 
@@ -96,11 +73,9 @@ function sayHello(res){
   app.get("/projects", function(req, res){
     console.log("Projects hit: " + projectsHitNumber);
     res.render('myProjects.ejs');
-<<<<<<< HEAD
-=======
+
     projectsHitNumber++;
 
->>>>>>> 06a93702ead8438a7c52d831f22a70fc82a8641d
   })
 
   app.get("/myInfo", function(req, res){
