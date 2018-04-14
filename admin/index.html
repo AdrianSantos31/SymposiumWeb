@@ -1,1 +1,624 @@
+<!DOCTYPE html>
+<html class="no-js">
 
+    <head>
+        <title>Admin Home Page</title>
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+        <link href="vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
+        <link href="assets/styles.css" rel="stylesheet" media="screen">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="custom.js"></script>
+
+    </head>
+
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Admin Panel</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> Karthikeyan Umapathy <i class="caret"></i>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="#">Profile</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a tabindex="-1" href="login.html">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="#">Dashboard</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Settings <b class="caret"></b>
+
+                                </a>
+                                <ul class="dropdown-menu" id="menu1">
+                                    <li>
+                                        <a href="#">Tools <i class="icon-arrow-right"></i>
+
+                                        </a>
+                                        <ul class="dropdown-menu sub-menu">
+                                            <li>
+                                                <a href="#">Reports</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Logs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Errors</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                <!--                    <li>
+                                        <a href="#">SEO Settings</a>
+                                    </li>   -->
+                                    <li>
+                                        <a href="#">Other Link</a>
+                                    </li>
+              <!--                      <li class="divider"></li>
+                                    <li>
+                                        <a href="#">Other Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Other Link</a>
+                                    </li>   -->
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Content <i class="caret"></i>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="tables.html">Add & Edit</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="tables.html">Tables</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">Custom Pages</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="calendar.html">Calendar</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a tabindex="-1" href="#">FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Views <i class="caret"></i>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="stats.html">View Users</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="stats.html">Analytics</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">Permissions</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3" id="sidebar">
+                    <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
+                        <li class="active">
+                            <a href="index.html"><i class="icon-chevron-right"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="calendar.html"><i class="icon-chevron-right"></i> Calendar</a>
+                        </li>
+                        <li>
+                            <a href="stats.html"><i class="icon-chevron-right"></i> Statistics (Charts)</a>
+                        </li>
+              <!--          <li>
+                            <a href="form.html"><i class="icon-chevron-right"></i> Forms</a>
+                        </li>   -->
+                        <li>
+                            <a href="tables.html"><i class="icon-chevron-right"></i> Tables</a>
+                        </li>
+                <!--          <li>
+                            <a href="buttons.html"><i class="icon-chevron-right"></i> Buttons & Icons</a>
+                        </li>
+                          <li>
+                            <a href="editors.html"><i class="icon-chevron-right"></i> Editors</a>
+                        </li>
+                        <li>
+                            <a href="interface.html"><i class="icon-chevron-right"></i> UI & Interface</a>
+                        </li>
+                      <li>
+                            <a href="#"><span class="badge badge-success pull-right">731</span> Orders</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-success pull-right">812</span> Invoices</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-info pull-right">27</span> Clients</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-info pull-right">1,234</span> Users</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-info pull-right">2,221</span> Messages</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-info pull-right">11</span> Reports</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-important pull-right">83</span> Errors</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-warning pull-right">4,231</span> Logs</a>
+                        </li>      -->
+                    </ul>
+                </div>
+
+                <!--/span-->
+                <div class="span9" id="content">
+                    <div class="row-fluid">
+                <!--        <div class="alert alert-success">
+							<button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <h4>Success</h4>
+                        	The operation completed successfully</div> -->
+                        	<div class="navbar">
+                            	<div class="navbar-inner">
+	                                <ul class="breadcrumb">
+	                                    <i class="icon-chevron-left hide-sidebar"><a href='#' title="Hide Sidebar" rel='tooltip'>&nbsp;</a></i>
+	                                    <i class="icon-chevron-right show-sidebar" style="display:none;"><a href='#' title="Show Sidebar" rel='tooltip'>&nbsp;</a></i>
+	                                    <li>
+	                                        <a href="#">Dashboard</a> <span class="divider">/</span>
+	                                    </li>
+	                                    <li>
+	                                        <a href="#">Settings</a> <span class="divider">.</span>
+	                         <!--           </li>
+	                                    <li class="active">Tools</li> -->
+	                                </ul>
+                            	</div>
+                        	</div>
+                    	</div>
+                      <div class="well" style="margin-top:15px;">
+                              <a href="#rootwizard" button type="button" class="btn btn-large btn-block btn-primary">Create Symposium</button></a>
+
+                            </div>
+
+                    <div class="row-fluid">
+                        <!-- block -->
+                        <div class="block">
+
+                            <div class="navbar navbar-inner block-header">
+
+
+                                <div class="muted pull-left">Statistics</div>
+                                <div class="pull-right"><span class="badge badge-warning">View More</span>
+
+                                </div>
+                            </div>
+                            <div class="block-content collapse in">
+                                <div class="span3">
+                                    <div class="chart" data-percent="73">73%</div>
+                                    <div class="chart-bottom-heading"><span class="label label-info">Visitors</span>
+
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div class="chart" data-percent="53">53%</div>
+                                    <div class="chart-bottom-heading"><span class="label label-info">Students</span>
+
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div class="chart" data-percent="83">83%</div>
+                                    <div class="chart-bottom-heading"><span class="label label-info">Projects</span>
+
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div class="chart" data-percent="13">13%</div>
+                                    <div class="chart-bottom-heading"><span class="label label-info">Users</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /block -->
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <!-- block -->
+                            <div class="block">
+                                <div class="navbar navbar-inner block-header">
+                                    <div class="muted pull-left">Students</div>
+                                    <div class="pull-right"><span class="badge badge-info">1,234</span>
+
+                                    </div>
+                                </div>
+                                <div class="block-content collapse in">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>UserID</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Sotiri</td>
+                                                <td>Kolvani</td>
+                                                <td>N00845431</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Adrian</td>
+                                                <td>Santos</td>
+                                                <td>N01234567</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Salim</td>
+                                                <td>Zubair</td>
+                                                <td>N01234567</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- /block -->
+                        </div>
+                        <div class="span6">
+                            <!-- block -->
+                            <div class="block">
+                                <div class="navbar navbar-inner block-header">
+                                    <div class="muted pull-left">Projects</div>
+                                    <div class="pull-right"><span class="badge badge-info">752</span>
+
+                                    </div>
+                                </div>
+                                <div class="block-content collapse in">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Project</th>
+                                                <th>Date</th>
+                                                <th>Team's Name</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Game</td>
+                                                <td>03/28/2018</td>
+                                                <td>DEADBEEF</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>VR Game</td>
+                                                <td>03/28/2018</td>
+                                                <td>TARDS</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Website</td>
+                                                <td>03/28/2018</td>
+                                                <td>Bluhhhh</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- /block -->
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <!-- block -->
+                            <div class="block">
+                                <div class="navbar navbar-inner block-header">
+                                    <div class="muted pull-left">Users</div>
+                                    <div class="pull-right"><span class="badge badge-info">4</span>
+
+                                    </div>
+                                </div>
+                                <div class="block-content collapse in">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>UserID</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Karthikeyan</td>
+                                                <td>Umapathy</td>
+                                                <td>N01234567</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Jim</td>
+                                                <td>Littleton</td>
+                                                <td>N01234567</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Sandeep</td>
+                                                <td>Reddivari</td>
+                                                <td>N01234567</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- /block -->
+                        </div>
+                        <div class="span6">
+                            <!-- block -->
+                            <div class="block">
+                                <div class="navbar navbar-inner block-header">
+                                    <div class="muted pull-left">Teams</div>
+                                    <div class="pull-right"><span class="badge badge-info">52</span>
+
+                                    </div>
+                                </div>
+                                <div class="block-content collapse in">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Team Name</th>
+                                                <th>Course Name</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>DEADBEEF</td>
+                                                <td>Software Engineering</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Game</td>
+                                                <td>Legal & Ethical</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Website</td>
+                                                <td>Internet Programming</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- /block -->
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                            <div class="row-fluid section">
+                                 <!-- block -->
+                                <div class="block">
+                                    <div class="navbar navbar-inner block-header">
+                                        <div class="muted pull-left">Create Symposium</div>
+                                    </div>
+                                    <div class="block-content collapse in">
+                                        <div class="span12">
+                                            <div id="rootwizard">
+                                                <div class="navbar">
+                                                  <div class="navbar-inner">
+                                                    <div class="container">
+                                                <ul>
+                                                    <li><a href="#tab1" data-toggle="tab">Step 1</a></li>
+                                                    <li><a href="#tab2" data-toggle="tab">Step 2</a></li>
+                                                    <li><a href="#tab3" data-toggle="tab">Step 3</a></li>
+                                                    <li><a href="#tab4" data-toggle="tab">Step 4</a></li>
+
+                                                </ul>
+                                                 </div>
+                                                  </div>
+                                                </div>
+                                                <div id="bar" class="progress progress-striped active">
+                                                  <div class="bar"></div>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane" id="tab1">
+                                                       <form class="form-horizontal">
+                                                          <fieldset>
+                                                            <div class="control-group">
+                                                              <label class="control-label" for="typeahead">Name: </label>
+                                                              <div class="controls">
+                                                                <input type="text" class="span6" id="typeahead"  data-provide="typeahead" data-items="4" data-source='["Spring Semester","Fall Semester","Summer Semester"]'>
+                                                                <p class="help-block">Please Enter The Symposium Name.</p>
+                                                              </div>
+                                                            </div>
+                                                            <div class="control-group">
+                                                              <label class="control-label" for="date01">Date input</label>
+                                                              <div class="controls">
+                                                                <input type="text" class="input-xlarge datepicker" id="date01" value="04/14/2018">
+                                                                <p class="help-block">Please choose the date of the event.</p>
+                                                              </div>
+                                                            </div>
+                                                          </fieldset>
+                                                        </form>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab2">
+                                                        <form class="form-horizontal">
+                                                          <fieldset>
+                                                            <div class="control-group">
+                                                              <label class="control-label" for="typeahead">Name: </label>
+                                                              <div class="controls">
+                                                                <input type="text" class="span6" id="typeahead"  data-provide="typeahead" data-items="4" data-source='["COP4620 - Software Engineering","COP4510 - Internet Programming","COP4640 - Compilers","COP4321 - Data Modeling"]'
+                                                              <div class="controls">
+                                                                <p class="help-block">Please Enter Class Name.</p>
+                                                              </div>
+                                                            </div>
+
+
+                                                          </fieldset>
+                                                        </form>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab3">
+                                                      <form class="form-horizontal">
+                                                        <fieldset>
+                                                          <div class="control-group">
+                                                            <label class="control-label" for="typeahead">Projects: </label>
+                                                            <div class="controls">
+                                                              <input type="text" class="span6" id="typeahead"  data-provide="typeahead" data-items="4" data-source=''
+                                                            <div class="controls">
+                                                              <p class="help-block">Please Enter Projects.</p>
+                                                            </div>
+                                                          </div>
+                                                        </fieldset>
+                                                      </form>
+
+
+                                                          <form class="form-horizontal">
+                                                            <fieldset>
+                                                              <div class="control-group">
+                                                                <label class="control-label" for="typeahead">Teams: </label>
+                                                                <div class="controls">
+                                                                  <input type="text" class="span6" id="typeahead"  data-provide="typeahead" data-items="4" data-source=''
+                                                                <div class="controls">
+                                                                  <p class="help-block">Please Enter Teams.</p>
+                                                                </div>
+                                                              </div>
+
+                                                        </fieldset>
+                                                      </form>
+                                                  </div>
+
+
+                                                              <div class="tab-pane" id="tab4">
+                                                                <form class="form-horizontal">
+                                                                  <fieldset>
+                                                                    <div class="control-group">
+                                                                      <label class="control-label" for="typeahead">Students: </label>
+                                                                      <div class="controls">
+                                                                        <input type="text" class="span6" id="typeahead"  data-provide="typeahead" data-items="4" data-source=''
+                                                                      <div class="controls">
+                                                                        <p class="help-block">Please Enter Students.</p>
+                                                                      </div>
+                                                                    </div>
+                                                            </fieldset>
+                                                          </form>
+                                                      </div>
+
+                                                    </div>
+                                                    <ul class="pager wizard">
+                                                        <li class="previous first" style="display:none;"><a href="javascript:void(0);">First</a></li>
+                                                        <li class="previous"><a href="javascript:void(0);">Previous</a></li>
+                                                        <li class="next last" style="display:none;"><a href="javascript:void(0);">Last</a></li>
+                                                        <li class="next"><a href="javascript:void(0);">Next</a></li>
+                                                        <li class="next finish" style="display:none;"><a href="javascript:;">Finish</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /block -->
+                            </div>
+        	            <!-- /wizard -->
+
+                           </div>
+                       </div>
+                       <!-- /block -->
+                   </div>
+                </div>
+            </div>
+            <hr>
+            <footer>
+                <center><p>&copy; UNF Symposium WebApp 2018</p></center>
+            </footer>
+        </div>
+        <!--/.fluid-container-->
+        <link href="vendors/datepicker.css" rel="stylesheet" media="screen">
+        <link href="vendors/uniform.default.css" rel="stylesheet" media="screen">
+        <link href="vendors/chosen.min.css" rel="stylesheet" media="screen">
+
+        <link href="vendors/wysiwyg/bootstrap-wysihtml5.css" rel="stylesheet" media="screen">
+
+        <script src="vendors/jquery-1.9.1.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendors/jquery.uniform.min.js"></script>
+        <script src="vendors/chosen.jquery.min.js"></script>
+        <script src="vendors/bootstrap-datepicker.js"></script>
+
+        <script src="vendors/wysiwyg/wysihtml5-0.3.0.js"></script>
+        <script src="vendors/wysiwyg/bootstrap-wysihtml5.js"></script>
+
+        <script src="vendors/wizard/jquery.bootstrap.wizard.min.js"></script>
+
+  <script type="text/javascript" src="vendors/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="assets/form-validation.js"></script>
+
+  <script src="assets/scripts.js"></script>
+        <script>
+
+
+
+        $(function() {
+            $(".datepicker").datepicker();
+            $(".uniform_on").uniform();
+            $(".chzn-select").chosen();
+            $('.textarea').wysihtml5();
+
+            $('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+                var $total = navigation.find('li').length;
+                var $current = index+1;
+                var $percent = ($current/$total) * 100;
+                $('#rootwizard').find('.bar').css({width:$percent+'%'});
+                // If it's the last tab then hide the last button and show the finish instead
+                if($current >= $total) {
+                    $('#rootwizard').find('.pager .next').hide();
+                    $('#rootwizard').find('.pager .finish').show();
+                    $('#rootwizard').find('.pager .finish').removeClass('disabled');
+                } else {
+                    $('#rootwizard').find('.pager .next').show();
+                    $('#rootwizard').find('.pager .finish').hide();
+                }
+            }});
+            $('#rootwizard .finish').click(function() {
+                alert('Finished! The Data Has Been Transfered.');
+                $('#rootwizard').find("a[href*='tab1']").trigger('click');
+            });
+        });
+        </script>
+
+    </body>
+
+</html>
