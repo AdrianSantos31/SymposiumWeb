@@ -15,14 +15,14 @@
   var infoHitNumber = 0;
 
 
-  //sql connection
-  // var connection = mysql.createConnection({
-  //   host  : 'localhost',
-  //   user  : 'root',
-  //   password  : 'Morcam@4',
-  //   database: 'sympo',
-  //   dateStrings : 'true'
-  // });
+  sql connection
+  var connection = mysql.createConnection({
+    host  : 'localhost',
+    user  : 'root',
+    password  : 'salimdbmaster',
+    database: 'sympo',
+    dateStrings : 'true'
+  });
 
 
 //make connection
