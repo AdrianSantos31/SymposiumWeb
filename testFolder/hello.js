@@ -18,8 +18,11 @@
   var connection = mysql.createConnection({
     host  : 'localhost',
     user  : 'root',
-    password  : 'salimdbmaster',
-    database: 'sympo',
+    //WIP Testing
+    password : 'Morcam@4';
+    database : 'sympo';
+    // password  : 'salimdbmaster',
+    // database: 'sympo',
     dateStrings : 'true'
   });
 
@@ -36,12 +39,12 @@
 //samle querry
 
 function q2(res, connection, ID){
-  var myQ = "select * from presenters where nID = 'n00900245';";
+  var myQ = "select s_name from presenters where nID = " + ID + ";";
   console.log('Gathering info from presenters');
   connection.query(myQ, function(error, results, fields){
     if(error) throw error;
-    var firstName = results.firstN;
-    res.render('myInfo.ejs', {FIRSTNAME: 'Camron'});
+    var firstName = results.s_name;
+    res.render('myInfo.ejs', {FIRSTNAME: firstName});
   })
 }
 
