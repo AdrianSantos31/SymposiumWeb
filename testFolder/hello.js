@@ -15,7 +15,6 @@
   var infoHitNumber = 0;
 
 
-  sql connection
   var connection = mysql.createConnection({
     host  : 'localhost',
     user  : 'root',
@@ -26,13 +25,13 @@
 
 
 //make connection
-  // connection.connect(function(err) {
-  //   if(err) {
-  //     console.error('error conecting: ' + err.stack);
-  //     return;
-  //   }
-  //   console.log('connected as id:' + connection.threadId);
-  // });
+  connection.connect(function(err) {
+    if(err) {
+      console.error('error conecting: ' + err.stack);
+      return;
+    }
+    console.log('connected as id:' + connection.threadId);
+  });
 
 //samle querry
 
