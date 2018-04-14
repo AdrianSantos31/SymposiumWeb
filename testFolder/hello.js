@@ -18,11 +18,11 @@
   var connection = mysql.createConnection({
     host  : 'localhost',
     user  : 'root',
-    //WIP Testing
-    password : 'Morcam@4';
-    database : 'sympo';
-    // password  : 'salimdbmaster',
-    // database: 'sympo',
+    // //WIP Testing
+    // password : 'Morcam@4',
+    // database : 'sympo',
+    password  : 'salimdbmaster',
+    database: 'sympo',
     dateStrings : 'true'
   });
 
@@ -47,6 +47,8 @@ function q2(res, connection, ID){
     res.render('myInfo.ejs', {FIRSTNAME: firstName});
   })
 }
+
+q2();
 
 function sayHello(res){
   res.send("Hello There");
