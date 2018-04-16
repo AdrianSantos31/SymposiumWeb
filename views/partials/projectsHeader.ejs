@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--Icon Load-->
+    <link rel="shortcut icon" type="image/x-icon" href="../old/img/logo2.ico">
+    <title>Symposium Web</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../old/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="../old/css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../style.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="../old/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--Ajax Loading-->
+    <!--AJAX-->
+
+    <!--Updated AJAX-->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script>
+    $(document).ready(function(){
+        $("#alphabeticalButton").click(function(){
+            $("#ajaxLoad").load("projectAlphabetical.html");
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+        $("#favoritesButton").click(function(){
+            $("#ajaxLoad").load("projectFavorites.html");
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+        $("#sectionsButton").click(function(){
+            $("#ajaxLoad").load("projectSections.html");
+        });
+    });
+    </script> -->
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Symposium</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <!-- <li class="page-scroll">
+                        <a href="#projects">Projects </a>
+                    </li> -->
+                    <li class="page-scroll">
+                        <a href="../index.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <br>
+    <br>
+    <!--Projects Section -->
+    <section class="success">
+        <div class="container">
+            <div class="row">
+              <center>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                 <a href = '/projects/alphabetical'> <button type="button" id="alphabeticalButton" class="btn btn-success btn-lg">Projects</button></a>
+                 <a href = '/projects/favorites'> <button type="button" id="favoritesButton" class="btn btn-danger btn-lg">Favorites</button></a>
+                 <a href = '/projects/sections'> <button type="button" id="sectionsButton" class="btn btn-warning btn-lg">Sections</button></a>
+                </div>
+              </center>
+            </div>
+            <br>

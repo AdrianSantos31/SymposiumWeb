@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--Icon Load-->
+    <link rel="shortcut icon" type="image/x-icon" href="../old/img/logo2.ico">
+    <title>Symposium Web</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../old/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="../old/css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../style.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="../old/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--Ajax Loading-->
+    <!--AJAX-->
+
+    <!--Updated AJAX-->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script>
+    $(document).ready(function(){
+        $("#alphabeticalButton").click(function(){
+            $("#ajaxLoad").load("projectAlphabetical.html");
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+        $("#favoritesButton").click(function(){
+            $("#ajaxLoad").load("projectFavorites.html");
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+        $("#sectionsButton").click(function(){
+            $("#ajaxLoad").load("projectSections.html");
+        });
+    });
+    </script> -->
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Symposium</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <!-- <li class="page-scroll">
+                        <a href="#projects">Projects </a>
+                    </li> -->
+                    <li class="page-scroll">
+                        <a href="../index.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <br>
+    <br>
+    <!--Projects Section -->
+    <section class="success">
+        <div class="container">
+            <div class="row">
+              <center>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" id="alphabeticalButton" class="btn btn-success btn-lg">Projects</button>
+                  <button type="button" id="favoritesButton" class="btn btn-danger btn-lg">Favorites</button>
+                  <button type="button" id="sectionsButton" class="btn btn-warning btn-lg">Sections</button>
+                </div>
+              </center>
+            </div>
+            <br>
+            <!--Alphabetical-->
+            <div id="ajaxLoad">
+              <!--Alphabetical-->
+              <div class="row">
+                <center>
+                  <h1>Table Number</h1>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Table Number</th>
+                        <th scope="col">Project Name</th>
+                        <th scope="col">Favorite</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><a href="projectHTML/test1.html">HiHello</a></td>
+                        <td>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Robot Me</td>
+                        <td>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Coolest Project</td>
+                        <td>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </center>
+              </div>
+            </div>
+
+            <!--Favorites-->
+            <!-- <div class="row">
+              <center>
+                <h1>Favorites</h1>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">Table Number</th>
+                      <th scope="col">Project Name</th>
+                      <th scope="col">Favorite</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Symposium Makeover</td>
+                      <td>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Robot Me</td>
+                      <td>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Coolest Project</td>
+                      <td>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </center>
+            </div> -->
+
+            <!--Sections-->
+            <!-- <div class="row">
+              <center>
+                <h1>Sections</h1>
+              </center>
+                <h6>CEN 4010 - Software Engineering</h6>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">Table Number</th>
+                      <th scope="col">Project Name</th>
+                      <th scope="col">Favorite</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Symposium Makeover</td>
+                      <td>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Robot Me</td>
+                      <td>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Coolest Project</td>
+                      <td>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h6>COP 4618 - Internet Programming</h6>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">Table Number</th>
+                      <th scope="col">Project Name</th>
+                      <th scope="col">Favorite</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>Credit Card Processor</td>
+                      <td>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td>iMDB API</td>
+                      <td>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">9</th>
+                      <td>aboutMe</td>
+                      <td>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+            </div> -->
+
+            <br>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-6">
+                        <h3>Location</h3>
+                        <p>School of Computing</p>
+                        <p>University of North Florida</p>
+                        <p>Jacksonville, Florida</p>
+                    </div>
+                    <div class="footer-col col-md-6">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/civicservant/" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/110980873863675056267" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <!--
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                          -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Symposium 2018
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="../old/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../old/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../old/js/jqBootstrapValidation.js"></script>
+    <script src="../old/js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../old/js/freelancer.min.js"></script>
+
+    <!--Custom JS-->
+    <script src="projectAjaxLoad.js"></script>
+</body>
+
+</html>
