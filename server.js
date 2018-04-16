@@ -67,7 +67,7 @@ var tessst = "SSSSSSNAAAAAKEEEEEEE";
 
 //alphbetical list
  app.get("/projects/alphabetical", function(req, res){
-   res.render("projectAlphabetical.ejs");
+   res.render("projectAlphabetical.ejs", {ANAME: tessst});
    console.log("alphaprojects hits");
 })
 
