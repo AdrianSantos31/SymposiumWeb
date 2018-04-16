@@ -6,6 +6,8 @@ var path = require("path");
 var wdir = "/SymposiumWeb/";
 
 
+var tessst = "SSSSSSNAAAAAKEEEEEEE";
+
 ///// MYSQL CONNECTION ///////////////////////////////////////////
 
 
@@ -52,11 +54,11 @@ var wdir = "/SymposiumWeb/";
   console.log("homepage redirect");
   //sess.id = 'n00900245';
   res.render("index.ejs");
-  
+
 })
 
 /////// Projects Page //////////////////////////////////////
- 
+
 //default page
   app.get("/projects", function(req, res){
     res.render("projectIndex.ejs");
@@ -80,7 +82,7 @@ var wdir = "/SymposiumWeb/";
  app.get("/projects/sections", function(req, res){
    res.render("projectSections.ejs")
 })
- 
+
 
 
 
@@ -103,5 +105,5 @@ var wdir = "/SymposiumWeb/";
 
 //listen control
  app.listen(80, function(){
-   console.log("Serving on port 80")   
+   console.log("Serving on port 80")
 })
